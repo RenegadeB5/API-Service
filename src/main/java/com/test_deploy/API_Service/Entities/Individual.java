@@ -13,7 +13,7 @@ import jakarta.persistence.Id;
 public class Individual {
     private @Id
     @GeneratedValue 
-    Long id;
+    Long ID;
     private String name;
     private String email;
     private String phoneNumber;
@@ -33,7 +33,7 @@ public class Individual {
 
 
     public Long getId() {
-        return id;
+        return ID;
     }
 
     public String getName() {
@@ -62,12 +62,12 @@ public class Individual {
 
     @Override
     public int hashCode() {
-        return Objects.hash(this.id, this.name, this.email, this.phoneNumber);
+        return Objects.hash(this.ID, this.name, this.email, this.phoneNumber);
     }
 
     @Override
     public String toString() {
-        return "Individual{" + "id=" + this.id + ", name='" + this.name + '\'' + ", email='" + this.email + '\'' + ", phoneNumber='" + this.phoneNumber + '\'' + '}';
+        return "Individual{" + "id=" + this.ID + ", name='" + this.name + '\'' + ", email='" + this.email + '\'' + ", phoneNumber='" + this.phoneNumber + '\'' + '}';
     }
 
 }

@@ -4,6 +4,7 @@ import java.util.Objects;
 
 import com.test_deploy.API_Service.Utils.Usage;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
@@ -16,6 +17,7 @@ public class Vehicle {
     String VIN;
     private String make;
     private String model;
+    @Column(name = "vehicle_year")
     private String year;
     private Usage usage;
 
